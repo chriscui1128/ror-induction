@@ -1,0 +1,12 @@
+<p>Create a new story</p>
+<%= form_for @story do |f| %>
+<div class="fieldWithErrors">
+  name: <%= f.text_field :name %>
+</div>
+<div class="fieldWithErrors">
+  link: <%= f.text_field :link %>
+</div>
+<p>
+  <%= submit_tag %>
+</p>
+<% end %>
